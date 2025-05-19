@@ -70,6 +70,7 @@ web-scraping-examples/
 Each script is focused on a specific use case. No frameworks. Just clean and minimal examples to get things done.
 
 ## Scraping & Crawling Examples
+Read full article about [scraping URLs from any website](https://hasdata.com/blog/find-all-urls-on-a-domain).
 
 ### Sitemap Scraping (Requests)
 
@@ -98,7 +99,7 @@ Change this data:
 
 ### Full Website Crawling (HasData)
 
-Launches a full crawl of a website using HasData’s no-code crawler API. Useful when the sitemap is missing or incomplete. Returns all discovered URLs.
+Launches a full crawl of a website using [HasData’s crawler](https://docs.hasdata.com/scrapers/websites-crawler/quickstart). Useful when the sitemap is missing or incomplete. Returns all discovered URLs.
 
 Change this data:
 
