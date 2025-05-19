@@ -3,6 +3,7 @@
 
 
 # Web Crawling & Scraping Examples (Python & Node.js)
+[![HasData_bannner](banner.png)](https://hasdata.com/)
 
 This repository contains practical examples of website link collection using **Python** and **Node.js**. It covers different methods: from basic sitemap parsing with `requests` to crawling entire websites and scraping Google SERPs with HasData’s API.
 
