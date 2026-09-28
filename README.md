@@ -1,11 +1,10 @@
-![Python](https://img.shields.io/badge/python-3.10+-blue)
-![Node.js](https://img.shields.io/badge/node.js-18+-green)
-
-
 # Web Crawling & Scraping Examples (Python & Node.js)
-[![HasData_bannner](banner.png)](https://hasdata.com/)
 
-This repository contains practical examples of website link collection using **Python** and **Node.js**. It covers different methods: from basic sitemap parsing with `requests` to crawling entire websites and scraping Google SERPs with HasData’s API.
+![Python 3.10 or newer badge](https://img.shields.io/badge/python-3.10+-blue) ![Node.js 18 or newer badge](https://img.shields.io/badge/node.js-18+-green)
+
+[![HasData, the web scraping API these examples call](banner.png)](https://hasdata.com/)
+
+This repository contains practical examples of website link collection using **Python** and **Node.js**. It covers the whole route, from basic sitemap parsing with `requests` to crawling entire websites and scraping Google SERPs with HasData’s API.
 
 ## Table of Contents
 
@@ -34,19 +33,26 @@ Install:
 pip install requests
 ```
 
+That is the only Python dependency.
+
 ### Node.js Setup
 
 Required packages:
 
 * `axios`
+* `xml2js`
 
 Install:
 
 ```bash
-npm install axios
+npm install axios xml2js
 ```
 
+The HasData examples need an API key, free after sign-up.
+
 ## Project Structure
+
+The two folders mirror each other, one script per method.
 
 ```
 web-scraping-examples/
@@ -81,8 +87,10 @@ Change this data:
 
 | Parameter     | Description                  | Example                                      |
 | ------------- | ---------------------------- | -------------------------------------------- |
-| `sitemap_url` | URL of the sitemap to scrape | `'https://demo.nopcommerce.com/sitemap.xml'` |
+| `sitemap_url` | URL of the sitemap to scrape | `'https://vuejs.org/sitemap.xml'` |
 | `output_file` | File name to save links      | `'sitemap_links.txt'`                        |
+
+The list lands in `sitemap_links.txt`, one URL per line.
 
 
 
@@ -95,7 +103,9 @@ Change this data:
 | Parameter    | Description                  | Example                                      |
 | ------------ | ---------------------------- | -------------------------------------------- |
 | `API_KEY`    | Your HasData API key         | `'111-1111-11-1'`                            |
-| `sitemapUrl` | URL of the sitemap to scrape | `'https://demo.nopcommerce.com/sitemap.xml'` |
+| `sitemapUrl` | URL of the sitemap to scrape | `'https://vuejs.org/sitemap.xml'` |
+
+Same parse as above, the request just travels through a residential exit.
 
 
 ### Full Website Crawling (HasData)
@@ -108,8 +118,10 @@ Change this data:
 | --------------- | ----------------------------------- | ---------------------------------- |
 | `API_KEY`       | Your HasData API key                | `'111-1111-11-1'`                  |
 | `payload.limit` | Max number of links to collect      | `20`                               |
-| `payload.urls`  | List of URLs to crawl               | `['https://demo.nopcommerce.com']` |
+| `payload.urls`  | List of URLs to crawl               | `['https://vuejs.org']` |
 | `output_path`   | Filename to save the collected URLs | `'results_<job_id>.json'`          |
+
+Fifty pages is a polite default, raise `limit` once the first run looks right.
 
 
 
@@ -127,6 +139,8 @@ Change this data:
 | `aiExtractRules` | JSON schema for AI content parsing | See script                | 
 | `outputFormat`   | Desired output format(s)           | `["json", "text"]`        | 
 
+The AI pass costs more credits per page, so point it at the pages worth structuring.
+
 ### Google SERP Scraping (HasData)
 
 Sends a search query to HasData and gets back links from Google search results. No browser automation needed. Simple and fast way to collect SERP data.
@@ -140,3 +154,14 @@ Change this data:
 | `location`    | Search location            | `'Austin,Texas,United States'`  |
 | `deviceType`  | Device type for search     | `'desktop'`                     |
 | `num_results` | Number of results to fetch | `100`                           |
+
+One query returns up to a hundred indexed URLs, no browser involved.
+
+## Disclaimer
+
+The examples fetch publicly available pages and sitemaps. Whether and how such collection is appropriate depends on jurisdiction, the site, and the use, and nothing in this repository is legal advice. [Is Web Scraping Legal?](https://hasdata.com/blog/is-web-scraping-legal) covers how we think about the question.
+
+## More Resources
+
+- [How to Find All URLs on a Domain](https://hasdata.com/blog/find-all-urls-on-a-domain), the article these examples come from
+- [Web Crawling with Python](https://hasdata.com/blog/web-crawling-with-python)

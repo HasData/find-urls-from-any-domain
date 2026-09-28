@@ -3,7 +3,7 @@ import json
 import xml.etree.ElementTree as ET
 
 api_key = "YOUR-API-KEY"
-sitemap_url = "https://demo.nopcommerce.com/sitemap.xml"
+sitemap_url = "https://vuejs.org/sitemap.xml"
 
 url = "https://api.hasdata.com/scrape/web"
 

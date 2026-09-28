@@ -1,7 +1,7 @@
 import requests
 import xml.etree.ElementTree as ET
 
-sitemap_url = "https://demo.nopcommerce.com/sitemap.xml"
+sitemap_url = "https://vuejs.org/sitemap.xml"
 output_file = "sitemap_links.txt"
 
 response = requests.get(sitemap_url)

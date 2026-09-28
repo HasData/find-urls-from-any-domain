@@ -3,7 +3,7 @@ const fs = require("fs");
 const xml2js = require("xml2js");
 
 const apiKey = "YOUR-API-KEY";
-const sitemapUrl = "https://demo.nopcommerce.com/sitemap.xml";
+const sitemapUrl = "https://vuejs.org/sitemap.xml";
 
 const url = "https://api.hasdata.com/scrape/web";
 
@@ -36,7 +36,7 @@ const headers = {
     }
 
     fs.writeFileSync("output.json", urls.join("\n"), "utf-8");
-    console.log("Links saved to output.json");
+    console.log(`Saved ${urls.length} links to sitemap_links.txt`);
   } catch (error) {
     console.error("Error:", error.message);
   }

@@ -11,7 +11,7 @@ const headers = {
 async function startCrawl() {
   const payload = {
     limit: 20,
-    urls: ['https://demo.nopcommerce.com'],
+    urls: ['https://vuejs.org'],
     aiExtractRules: {
       products: {
         type: 'list',

@@ -2,7 +2,7 @@ const axios = require('axios');
 const fs = require('fs');
 const { parseStringPromise } = require('xml2js');
 
-const sitemapUrl = 'https://demo.nopcommerce.com/sitemap.xml';
+const sitemapUrl = 'https://vuejs.org/sitemap.xml';
 const outputFile = 'sitemap_links.txt';
 
 (async () => {

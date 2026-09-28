@@ -11,7 +11,7 @@ headers = {
 
 payload = {
     "limit": 20,
-    "urls": ["https://demo.nopcommerce.com"],
+    "urls": ["https://vuejs.org"],
     "outputFormat": ["json"]
 }
 
