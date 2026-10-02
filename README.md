@@ -2,7 +2,7 @@
 
 ![Python 3.10 or newer badge](https://img.shields.io/badge/python-3.10+-blue) ![Node.js 18 or newer badge](https://img.shields.io/badge/node.js-18+-green)
 
-[![HasData, the web scraping API these examples call](banner.png)](https://hasdata.com/)
+[![HasData, the web scraping API these examples call](banner.png)](https://hasdata.com/?utm_source=github&utm_medium=syndication&utm_campaign=find-all-urls-on-a-domain&utm_content=find-urls-from-any-domain-readme)
 
 This repository contains practical examples of website link collection using **Python** and **Node.js**. It covers the whole route, from basic sitemap parsing with `requests` to crawling entire websites and scraping Google SERPs with HasData’s API.
 
@@ -77,7 +77,7 @@ web-scraping-examples/
 Each script is focused on a specific use case. No frameworks. Just clean and minimal examples to get things done.
 
 ## Scraping & Crawling Examples
-Read full article about [scraping URLs from any website](https://hasdata.com/blog/find-all-urls-on-a-domain).
+Read full article about [scraping URLs from any website](https://hasdata.com/blog/find-all-urls-on-a-domain?utm_source=github&utm_medium=syndication&utm_campaign=find-all-urls-on-a-domain&utm_content=find-urls-from-any-domain-readme).
 
 ### Sitemap Scraping (Requests)
 
@@ -110,7 +110,7 @@ Same parse as above, the request just travels through a residential exit.
 
 ### Full Website Crawling (HasData)
 
-Launches a full crawl of a website using [HasData’s crawler](https://docs.hasdata.com/scrapers/websites-crawler/quickstart). Useful when the sitemap is missing or incomplete. Returns all discovered URLs.
+Launches a full crawl of a website using [HasData’s crawler](https://docs.hasdata.com/scrapers/websites-crawler/quickstart?utm_source=github&utm_medium=syndication&utm_campaign=find-all-urls-on-a-domain&utm_content=find-urls-from-any-domain-readme). Useful when the sitemap is missing or incomplete. Returns all discovered URLs.
 
 Change this data:
 
@@ -159,9 +159,9 @@ One query returns up to a hundred indexed URLs, no browser involved.
 
 ## Disclaimer
 
-The examples fetch publicly available pages and sitemaps. Whether and how such collection is appropriate depends on jurisdiction, the site, and the use, and nothing in this repository is legal advice. [Is Web Scraping Legal?](https://hasdata.com/blog/is-web-scraping-legal) covers how we think about the question.
+The examples fetch publicly available pages and sitemaps. Whether and how such collection is appropriate depends on jurisdiction, the site, and the use, and nothing in this repository is legal advice. [Is Web Scraping Legal?](https://hasdata.com/blog/is-web-scraping-legal?utm_source=github&utm_medium=syndication&utm_campaign=find-all-urls-on-a-domain&utm_content=find-urls-from-any-domain-readme) covers how we think about the question.
 
 ## More Resources
 
-- [How to Find All URLs on a Domain](https://hasdata.com/blog/find-all-urls-on-a-domain), the article these examples come from
-- [Web Crawling with Python](https://hasdata.com/blog/web-crawling-with-python)
+- [How to Find All URLs on a Domain](https://hasdata.com/blog/find-all-urls-on-a-domain?utm_source=github&utm_medium=syndication&utm_campaign=find-all-urls-on-a-domain&utm_content=find-urls-from-any-domain-readme), the article these examples come from
+- [Web Crawling with Python](https://hasdata.com/blog/web-crawling-with-python?utm_source=github&utm_medium=syndication&utm_campaign=find-all-urls-on-a-domain&utm_content=find-urls-from-any-domain-readme)
